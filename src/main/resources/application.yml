@@ -1,0 +1,17 @@
+server:
+    port: 8091
+
+spring:
+    profiles:
+        active: dev
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5433/firma
+        username: ebok
+        password: ebok
+        hikari:
+            poolName: Hikari
+            auto-commit: false
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+        show-sql: true
