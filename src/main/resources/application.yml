@@ -15,5 +15,5 @@ spring:
             poolName: Hikari
             auto-commit: false
     jpa:
-        database-platform: io.github.jhipster.domain.util.FixedPostgreSQL10Dialect
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
         show-sql: true
