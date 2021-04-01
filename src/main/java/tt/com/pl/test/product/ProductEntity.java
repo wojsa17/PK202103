@@ -6,7 +6,6 @@ import lombok.ToString;
 import tt.com.pl.test.common.AbstractEntity;
 
 import javax.persistence.Entity;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -14,7 +13,6 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @ToString
-@SequenceGenerator(name = "PRODUCT_SEQ", allocationSize = 1000)
 public class ProductEntity extends AbstractEntity<Long> {
     private String name;
 }
