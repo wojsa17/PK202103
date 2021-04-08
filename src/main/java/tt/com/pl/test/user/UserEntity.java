@@ -1,4 +1,4 @@
-package tt.com.pl.test.product;
+package tt.com.pl.test.user;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,11 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "product")
 @Getter
 @Setter
 @ToString
-public class ProductEntity extends AbstractEntity<Long> {
-    private String name;
-    private String category;
+@Table(name = "USER")
+public class UserEntity extends AbstractEntity<Long> {
+    private boolean activated;
 }

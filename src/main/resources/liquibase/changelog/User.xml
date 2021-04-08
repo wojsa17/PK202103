@@ -15,4 +15,13 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="user-2" author="wojsam">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="USER"/>
+        </preConditions>
+        <addColumn tableName="USER">
+            <column name="ACTIVATED" type="CHAR(1)" defaultValue="0"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
