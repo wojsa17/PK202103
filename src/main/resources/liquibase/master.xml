@@ -8,6 +8,10 @@
     <include file="classpath:liquibase/changelog/20210401180400_added_entity_Product.xml" relativeToChangelogFile="false"/>
     <include file="classpath:liquibase/changelog/User.xml" relativeToChangelogFile="false"/>
     <include file="classpath:liquibase/changelog/Product.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:liquibase/changelog/Recipe.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:liquibase/changelog/Ingredient.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:liquibase/changelog/File.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:liquibase/changelog/Comment.xml" relativeToChangelogFile="false"/>
 
 <!--    Składnik-->
 <!--    -id pk-->
@@ -20,12 +24,14 @@
 <!--    -id-->
 <!--    -user_id-->
 <!--    -->
+
 <!--    Komentarze-->
 <!--    -id-->
 <!--    -user_id-->
 <!--    -przepis_id-->
 <!--    -tekst varchar2(4000)-->
 <!--    -->
+
 <!--    File-->
 <!--    -id-->
 <!--    -content blob-->
