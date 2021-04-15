@@ -9,13 +9,18 @@ import tt.com.pl.test.common.*;
 @RestController
 @RequestMapping("api/product")
 @RequiredArgsConstructor
-public class ProductResource implements CRUDResource<Long, ProductEntity, ProductParams> {
+public class ProductResource implements CRUDResource<Long, ProductEntity, ProductParams>, SaveDTOResource<Long, ProductEntity, ProductDTO> {
 
     @Getter
     private final ProductService service;
 
     @Override
     public SearchService<Long, ProductEntity, ProductParams> getSearchService() {
+        return service;
+    }
+
+    @Override
+    public ServiceDTO<Long, ProductEntity, ProductDTO> getServiceDTO() {
         return service;
     }
 }
