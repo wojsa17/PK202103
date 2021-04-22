@@ -10,7 +10,7 @@ import tt.com.pl.test.common.SearchService;
 import tt.com.pl.test.common.UpdateResource;
 
 @RestController
-@RequestMapping("api/recipe")
+@RequestMapping("api/user")
 @RequiredArgsConstructor
 public class UserResource implements SearchResource<Long, UserEntity, UserParams>, DeleteResource<Long, UserEntity>, UpdateResource<Long, UserEntity>{
 

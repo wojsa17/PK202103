@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: "webcook"
+  cloud:
+    config:
+      uri: "http://localhost:9000"
+      fail-fast: true
